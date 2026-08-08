@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SmartDrive: AI-Based ADAS Simulation
 
 From recorded cone-course perception to a live CARLA simulation, SmartDrive is a two-stage computer-vision and advanced driver-assistance project. It keeps the practical learning path visible: first understand the road from a camera feed, then use those ideas in a simulated vehicle with ADAS controls and driver-state monitoring.
@@ -131,3 +132,7 @@ For an end-to-end test, use a local cone video with the Phase 1 command above, t
 ## License
 
 Released under the [MIT License](LICENSE). See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for dependency and reused-helper notices.
+=======
+# SmartDrive-AI-Based-Simulation-for-Advanced-Driving-Assistance-Systems-ADAS-
+SmartDrive turns a dashcam view into driving intelligence—spotting cones, mapping safe paths, and bringing those decisions to life in a CARLA-powered ADAS simulation with braking, cruise control, and driver-alert monitoring.
+>>>>>>> 8539735a68d175d9984cd0a9a448198d3dbcfb4a

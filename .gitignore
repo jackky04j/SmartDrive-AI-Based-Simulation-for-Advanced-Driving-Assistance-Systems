@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Generated artifacts
+outputs/*
+!outputs/.gitkeep
+
+# Local recordings and large facial-landmark model (download/install locally)
+data/samples/*.mp4
+data/models/drowsiness/*.dat
+docs/showcase/*.mp4
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Pre-cleanup source folders retained locally only until manually removed
+/adas/
+/3d/
+/carla examples/
+/models/

@@ -1,0 +1,20 @@
+name: Repository checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  structural-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile Python sources
+        run: python -m compileall -q config.py src scripts tests
+      - name: Run structural tests
+        run: >-
+          python -c "import runpy; m = runpy.run_path('tests/test_repository_structure.py');
+          [f() for n, f in m.items() if n.startswith('test_')]; print('Structural tests: PASS')"

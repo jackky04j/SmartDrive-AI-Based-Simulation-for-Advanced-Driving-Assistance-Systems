@@ -1,0 +1,16 @@
+# Core Phase 1 video-perception stack
+numpy>=1.24,<2.0
+opencv-python>=4.8
+ultralytics>=8.3,<8.5
+torch>=2.2
+matplotlib>=3.8
+
+# Phase 2 CARLA ADAS simulation and driver monitoring
+carla==0.9.15
+pygame>=2.5
+dlib>=19.24
+imutils>=0.5.4
+scipy>=1.11
+
+# Development checks
+pytest>=8.0

@@ -1,0 +1,28 @@
+from config import DROWSINESS_MODEL_PATH
+
+USE_YOLO = True
+YOLO_MODEL_PATH = "yolov8n.pt"  # Downloaded automatically by Ultralytics on first use.
+
+TARGET_SPEED = 30.0
+DT = 0.05
+
+LOOKAHEAD_STRAIGHT = 8.0
+LOOKAHEAD_CURVE = 4.0
+CURVE_YAW_THRESHOLD = 0.15
+
+ADAS_OBJECTS = {"car", "truck", "bus", "motorcycle", "bicycle", "traffic light", "stop sign", "sports ball"}
+CONF_THRESHOLD = 0.4
+MIN_BOX_AREA = 300
+MIN_VALID_DISTANCE = 1.5
+
+K_P, K_I, K_D = 0.4, 0.01, 0.15
+FOCAL_SCALE = 800.0
+DIST_SLOW, DIST_BRAKE, DIST_EMERGENCY = 20.0, 10.0, 5.0
+TTC_BRAKE, TTC_EMERGENCY = 3.0, 1.5
+
+EYE_AR_THRESH = 0.25
+MOUTH_AR_THRESH = 0.79
+EYE_AR_CONSEC_FRAMES = 20
+HEAD_TILT_THRESH = 25.0
+
+SHAPE_PREDICTOR_PATH = DROWSINESS_MODEL_PATH
